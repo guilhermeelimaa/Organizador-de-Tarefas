@@ -1,0 +1,90 @@
+body {
+    font-family: Comic Sans MS, sans-serif; /* Estilo da fonte */
+    background-color: #6196db; /* Cor de fundo suave */
+}
+
+.container {
+    max-width: 600px; /* Largura máxima do contêiner */
+    margin: 20px auto; /* Centraliza o contêiner */
+    padding: 20px; /* Espaçamento interno */
+    background-color: white; /* Cor de fundo do contêiner */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    min-height: 500px; /* Aumenta a altura mínima do quadrado */
+}
+
+h1 {
+    font-size: 24px; /* Tamanho da fonte do H1 */
+    margin: 10px 0; /* Espaçamento vertical */
+}
+
+h2 {
+    font-size: 19px; /* Tamanho da fonte do H2 */
+    margin: 10px 0; /* Espaçamento vertical */
+}
+
+/* Estilo dos itens da lista */
+#pending-tasks, #completed-tasks {
+    list-style-type: none; /* Remove os pontos da lista */
+    padding: 0; /* Remove o preenchimento */
+}
+
+.todo-item {
+    display: flex; /* Alinha os elementos em linha */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px; /* Espaçamento interno */
+    border-bottom: 1px solid #e0e0e0; /* Linha separadora suave */
+}
+
+.todo-item:last-child {
+    border-bottom: none; /* Remove a linha do último item */
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px; /* Espaçamento entre o checkbox e o texto */
+    transform: scale(1.2); /* Aumenta o tamanho do checkbox */
+}
+
+/* Estilo do botão de excluir */
+.delete-button {
+    background: none; /* Sem fundo */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor em forma de mão */
+    font-size: 18px; /* Tamanho do ícone de lixo */
+    color: red; /* Cor do ícone de lixo */
+    margin-left: 10px; /* Margem à esquerda para afastar da tarefa */
+    margin-left: auto; /* Move o botão para a direita */
+}
+
+/* Estilo do botão */
+button {
+    background-color: #007BFF; /* Azul suave */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 6px 10px; /* Reduzido o padding para botões menores */
+    cursor: pointer; /* Cursor em forma de mão */
+    margin: 5px; /* Espaçamento entre os botões */
+    font-size: 12px; /* Tamanho da fonte reduzido */
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre os botões */
+button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo do campo de texto */
+input[type="text"] {
+    width: calc(100% - 25px); /* Ajusta a largura do campo de texto */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda suave */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin: 5px 0; /* Espaçamento vertical */
+}
+
+/* Alinhamento dos botões e campo de texto */
+#add-task, #reset-tasks {
+    display: inline-block; /* Exibe os botões em linha */
+    vertical-align: middle; /* Alinha verticalmente os botões */
+}

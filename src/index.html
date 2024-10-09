@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <input type="text" id="new-task" placeholder="Nova tarefa..." maxlength="26">
+        <button id="add-task">Adicionar Tarefa</button>
+        <button id="reset-tasks">Resetar Tarefas</button>
+
+        <h2>Tarefas Pendentes</h2>
+        <ul id="pending-tasks"></ul>
+
+        <h2>Tarefas Concluídas</h2>
+        <ul id="completed-tasks"></ul>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
